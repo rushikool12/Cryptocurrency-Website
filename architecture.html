@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="assets/css/architecture.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Architecture</title>
+	<style>
+	body {
+	background-image: url("assets/images/background2.png");
+	}
+	p {
+		background-image: url("assets/images/background.png");
+	}
+	dd	{
+		background-image: url("assets/images/background.png");
+	}
+	</style>
+  </head>
+  <body>
+  	<header>
+	<img class="logo" src="assets/images/logo1.png" alt= "logo" width="100" height="100">
+	<h1>Cryptocurrency</h1>
+	<h4>By Rushikesh Kulkarni</h4>
+	</header>
+	
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="topcc.html"> Popular Cryptocurrencies</a>
+        <a href="terms.html">Terminology</a>
+        <a href="resources.html">Resources</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+	<h2>Architecture</h2>
+	<div class = "video">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/6Gu2QMTAkEU" ></iframe>
+	</div>
+	<h3>How do cryptocurrencies exactly work?</h3>
+	<p>
+	In a centralized system the Government and Banks control the control the supply of currency by printing the money or demanding additional banking ledgers. In decentralized the control is not in the hands of the government instead every single node/participant needs to do this job. A cryptocurrency consists of a network of peers. For each transaction on the network a record is created in public ledger known as Blockchain. 
+	The crucial role of maintaining safety, integrity and balance of these ledgers is done by miners.  Most cryptocurrencies have a fixed amount of the maximum number of tokens in the circulation and they are designed in such a way that their production gradually decreases. For example, there can be only 21 million Bitcoins in the circulation. 
+	</p>
+	<figure class="center">
+		<img src="assets/images/howitworks.png" alt="Working of Transctions">
+		<figcaption class="btc">Working of Cryptocurrencies</figcaption>
+		</figure>
+	<h3>How does transaction work? </h3>
+	<p>
+	Every transaction file consists of sender<span>&#39;</span>s and recipient<span>&#39;</span>s public keys and amount of coins to be transferred. The sender uses their private key to sign off the transaction. All of this is done using cryptography and the transaction is broadcasted across the network and must be confirmed by the miners.
+	<br>
+	In a cryptocurrency network, only miners can confirm transactions by solving the cryptographic puzzles. They take the transactions on the network and timestamp them as legitimate and after the confirmation, the transaction is completed and spread across the network. Once the transaction is confirmed it becomes irreversible. In exchange for this procedure, miners receive certain reward and the transaction fees. 
+	<br>
+	Cryptocurrency network keeps all the records and it<span>&#39;</span>s based on absolute consensus. Every record must match across all the nodes if they disagree even on a single record, the whole system breaks. This is done using strong cryptography.
+	</p>
+	<h3>Info about Blockchain and Miners:</h3>
+	<dl>
+	<dt>Blockchain</dt>
+	<dd>It is made up of series of block which keep the record of the transactions. Every block contains a hash pointer which links to the previous block, a timestamp and transaction data. Blockchains are secure design and are example of distributed computed systems with high byzantine fault tolerance.
+	</dd>
+	<dt>Miners</dt>
+	<dd>Anyone can be a miner if they invest some of work of their computers to complete the task. Miners have to find a hash(a product of cryptographic function)that connects the new block to its predecessor. 
+	Basically, they have to solve the cryptographic puzzle and in order to do that they require large amount of computing power. Once the transactions are done, miners receive some amount of coins as an incentive. This is the only way of creating valid bitcoins. So basically, miners create bitcoins.
+	<dd>
+	</dl>
+	<script>
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+		} else {
+        x.className = "topnav";
+		}
+	}
+	</script>
+	</body>
+	</html>
